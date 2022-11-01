@@ -18,5 +18,3 @@ use App\Http\Controllers\ApiVideoController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::resource('videos', ApiVideoController::class);
